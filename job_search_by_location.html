@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jobs_by_location.css">
+    <script src="https://kit.fontawesome.com/de33c97a7f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&family=Poppins&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-cont">
+        <div id="im-cont">
+            <img src="https://tpc.googlesyndication.com/simgad/6050889871249285281" alt="">
+        </div>
+        <div id="nav">
+            <div id="search">
+                <div class="flx border">
+                    <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <div class="m-left gap"><input id="keyword" type="text" placeholder="Search by skills, company & job" size="60"></div>
+                </div>
+            </div>
+            <div class="flx border location">
+                <div><i class="fa-solid fa-location-dot"></i></div>
+                <div  class="m-left gap">
+                    <!-- <label for="">Location</label>   -->
+                    <input id="location" type="text" placeholder="Location" >                                  
+                </div>                            
+            </div>
+            <div class="flx border">
+                <div><i class="fa-solid fa-briefcase"></i></div>
+                <div  class="m-left gap ">
+                    <label for="">Experience</label>
+                    <select name="" id="exp">
+                    <option value=""></option>
+                    <option value="1 Year">1 Year</option>
+                    <option value="0 Year">0 Year</option>
+                    <option value="2 Years">2 Years</option>
+                    <option value="3 Years">3 Years</option>
+                    </select>
+                </div> 
+            </div>
+            <div><button id="s-btn">Search</button></div>
+        </div>
+        <div id="outer-cont">
+            <div id="inner1">
+                <p id="filter">Filter By</p>
+                <!-- <label for="">Filter By</label> -->
+               
+                <div >
+                    <select name="" class="filter" id="function">
+                        <option value="" selected disabled>Function</option>
+                        <option value="Admin / Front office">Admin / Front office</option>
+                        <option value="Advertising/Entertainment/Media">Advertising/Entertainment/Media</option>
+                        <option value="Banking/Finencial Services">Banking/Finencial Services</option>
+                        <option value="Construction">Construction</option>
+                        <option value="Customer care/BPO/KPO">Customer care/BPO/KPO</option>
+                        <option value="Education/Teaching">Education/Teaching</option>
+                        <option value="Health Care">Health Care</option>
+                        <option value="Hotel/Restaurent">Hotel/Restaurent</option>
+                        <option value="Human Resource">Human Resource</option>
+                        <option value="IT">IT</option>
+                    </select>
+                </div>
+                <div >
+                    <select name="" class="filter" id="role">
+                        <option value="" selected disabled>Role</option>
+                        <option value="AC Technician">AC Technician</option>
+                        <option value="Accessory Designer">Accessory Designer</option>
+                        <option value="Account Manager/Direct Manager">Account Manager/Direct Manager</option>
+                        <option value="Account Planning">Account Planning</option>
+                        <option value="Biologist">Biologist</option>
+                        <option value="Branch Manager">Branch Manager</option>
+                        <option value="Electrical Engineering">Electrical Engineering</option>
+                        <option value="Chef">Chef</option>
+                        <option value="Commercial Manager">Commercial Manager</option>
+                        <option value="Data Analyst">Data Analyst</option>
+                      </select>
+                </div>
+                <div >
+                    <select name="" class="filter" id="ex">
+                        <option value="" selected disabled>Experience</option>
+                        <option value="0 Year">0 Year</option>
+                        <option value="1 Year">1 Year</option>
+                        <option value="2 Years">2 Years</option>
+                        <option value="3 Years">3 Years</option>
+                        <option value="4 Years">4 Years</option>
+                    </select>
+                </div>
+                <div >
+                    <select name="" class="filter" id="city">
+                        <option value="" selected disabled>City</option>
+                        <option value="Bangalore / Bengaluru">Bangalore / Bengaluru (79604)</option>
+                        <option value="Chennai">Chennai (1863)</option>
+                        <option value="Hyderabad / Secunderabad">Hyderabad / Secunderabad (1499)</option>
+                        <option value="Pune">Pune (546)</option>
+                        <option value="Mumbai">Mumbai (513)</option>
+                    </select>
+                </div>
+                <div >
+                    <select name="" class="filter" id="salary">
+                        <option value="" selected disabled>Salary (INR)</option>
+                        <option value="0 - 1 Lakhs (2948)">0 - 1 Lakhs (2948)</option>
+                        <option value="1 Lakhs - 2 Lakhs (4026)">1 Lakhs - 2 Lakhs (4026)</option>
+                        <option value="2 Lakhs - 5 Lakhs (6072)">2 Lakhs - 5 Lakhs (6072)</option>
+                        <option value="5 Lakhs - 10 Lakhs (5593)">5 Lakhs - 10 Lakhs (5593)</option>
+                        <option value="10 Lakhs - 20 Lakhs (4941)">10 Lakhs - 20 Lakhs (4941)</option>
+                    </select>
+                </div>
+                <div >
+                    <select name="" class="filter" id="place">
+                        <option value="" selected disabled>Great Placr to Work</option>
+                        <option value="Show Only GPTW Jobs (1213)">Show Only GPTW Jobs (1213)</option>                        
+                    </select>
+                </div>
+                <div >
+                    <select name="" class="filter" id="qualy">
+                        <option value="" selected disabled>Qualification</option>
+                        <option value="Bacheler Of Technolog... (2797)">Bacheler Of Technolog... (2797)</option>
+                        <option value="Bachelor Of Computer... (1794)">Bachelor Of Computer... (1794)</option>
+                        <option value="Bachelor Of Commerce... (1419)">Bachelor Of Commerce... (1419)</option>
+                        <option value="Bachelor Of Science (B.... (1242)">Bachelor Of Science (B.... (1242)</option>
+                        <option value="Bachelor Of Business A... (1160)">Bachelor Of Business A... (1160)</option>
+                    </select>
+                </div>
+                <div >
+                    <select name="" class="filter" id="emp">
+                        <option value="" selected disabled>Employer Type</option>
+                        <option value="Company (735632)">Company (735632)</option>                        
+                        <option value="Consultant (5952)">Consultant (5952)</option>                        
+                    </select>
+                </div>
+                <div >
+                    <select name="" class="filter" id="comp">
+                        <option value="" selected disabled>Top Companies</option>
+                        <option value="Amazon (8460)">Amazon (8460)</option>
+                        <option value="Accenture (4067)">Accenture (4067)</option>
+                        <option value="Virate India Private Limi...(2395)">Virate India Private Limi...(2395)</option>
+                        <option value="IBM (1779)">IBM (1779)</option>
+                        <option value="Robert Bosch (1463)">Robert Bosch (1463)</option>
+                    </select>
+                </div>
+                <div>
+                    <select name="" id="industry"class="filter">
+                        <option value="" selected disabled>Industry</option>
+                        <option value="Advertising/PR/Events">Advertising/PR/Events</option>
+                        <option value="Bio - Technology & Science">Bio - Technology & Science</option>
+                        <option value="Customer Service">Customer Service</option>
+                        <option value="Internet / E - Commerce">Internet / E - Commerce</option>
+                        <option value="Electronice & Manufacturing">Electronice & Manufacturing</option>                      
+                    </select>
+                </div>
+                <div>
+                    <select name="" id="fres"class="filter">
+                        <option value="" selected disabled>Job Freshness</option>
+                        <option value="Last 30 Days (47740)">Last 30 Days (47740)</option>
+                        <option value="Last 15 Days (26879)">Last 15 Days (26879)</option>                      
+                        <option value="Last 7 Days (14467)">Last 7 Days (14467)</option>                      
+                        <option value="Last 3 Days (6291)">Last 3 Days (6291)</option>                      
+                        <option value="Last 1 Day (3002)">Last 1 Day (3002)</option>                      
+                    </select>
+                </div>
+                <div>
+                    <select name="" id="type"class="filter">
+                        <option value="" selected disabled>Job Type</option>
+                        <option value="Permanent Job (78281)">Permanent Job (78281)</option>
+                        <option value="International Jobs (48563)">LInternational Jobs(248563</option>                      
+                        <option value="Jobs For Women (2005)">Jobs For Women (2005)</option>                      
+                        <option value="Jobs For Covid- 19 Layof... (1969)">Jobs For Covid- 19 Layof... (1969)</option>                      
+                        <option value="Work From Home (1736)">Work From Home (1736)</option>                      
+                    </select>
+                </div>
+            </div>
+            <div id="inner2">
+                <div id="fixed-div">
+                    <label for="">Show : </label>
+                    <select name="" id="no_of_content">
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                        <option value="75">75</option>
+                        <option value="100">100</option>
+                    </select>
+                    <sapan>Per Page</sapan>
+                    <label class="gap" for="">Sort By : </label>
+                    <select name="" id="no_of_content">
+                        <!-- <option value="Freshness" selected disabled>Freshness</option> -->
+                        <option value="Relevence">Freshness</option>
+                        <option value="Relevence">Relevence</option>
+                    </select>
+                </div>
+                <div id="length">
+                    <p class="filter">No of jobs available will be showed here</p>
+                </div>
+                <div id="job-box">
+
+                </div>
+            </div>
+            <div id="inner3">
+                <img src="https://tpc.googlesyndication.com/simgad/9785846071184575056" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="jobs_by_location.js"></script>
