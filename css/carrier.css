@@ -1,0 +1,264 @@
+
+
+.top-container{
+    /* border: 1px solid red; */
+    margin-bottom: 10px;
+    
+}
+
+.c1{
+height:auto;
+display: flex;
+gap: 20px;
+margin: auto;
+padding-top:-30px;
+padding-left: 50px;
+width: 80%;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 18px;
+/* border: 2px solid red; */
+}
+.c2{
+    height:auto;
+    /* border:1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    width: 60%;
+    margin: auto;
+    margin-top: 15px;
+}
+.c3{
+    margin-top: 20px;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    /* border: 1px solid red; */
+    
+}
+
+
+span {
+  content: "\2103";
+}
+.facebook{
+    /* border: 1px solid blue; */
+    width:30%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+.heading{
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* border: 1px solid black; */
+    
+}
+.news{
+    /* border: 1px solid teal; */
+    width: 55%;
+    height: 50px;
+}
+.main-add{
+    /* border: 1px solid green; */
+    width: 40%;
+    height: auto;
+    padding-left: 80px;
+    display: flex;
+    flex-direction: column;
+   
+}
+.add{
+    /* border: 1px solid green; */
+    width: 100%;
+    height: auto;
+    padding-left: 80px;
+   
+}
+.below-add{
+    /* border: 1px solid green; */
+    width: 100%;
+    height: auto;
+    padding-left: 80px;
+    margin-top: 100px;
+   
+}
+/* .bottom{
+    border: 1px solid pink;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+
+} */
+#mgmt{
+    cursor: pointer;
+}
+#mgmt:hover{
+    color: #65b;
+}
+#carrierwomen{
+    cursor: pointer;
+}
+#carrierwomen:hover{
+    color: #65b;
+}
+#covid{
+    cursor: pointer;
+}
+#covid:hover{
+    color: #65b;
+}
+#interview{
+    cursor: pointer;
+}
+#interview:hover{
+    color: #65b;
+}
+#jobsearch{
+    cursor: pointer;
+}
+#jobsearch:hover{
+    color: #65b;
+}
+
+
+#main1{
+    /* border: 3px  solid blue; */
+    display: flex;
+    gap: 40px;
+    width: 90%;
+    margin: auto;
+    height: auto;
+   
+}
+
+#news1{
+    /* border: 1px  solid red; */
+    display: flex;
+    gap: 40px;
+}
+
+.news{
+    /* border: 1px solid pink; */
+    width: 55%;
+    
+}
+.container{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 220px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+ 
+}
+.containerhalf{
+   
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    margin-bottom: 25px;
+    /* border: 2px solid green; */
+    
+ 
+}
+
+
+
+
+.box1{
+    /* border: 1px solid black; */
+    height:90%;
+    width: 40%;
+    margin-right: -20px;
+}
+.box2{
+    /* border: 3px solid black; */
+    height: 90%;
+    
+    display: flex;
+    flex-direction: column;
+    margin-left: -50px;
+    padding-left: 20px;
+}
+
+
+.big-img{
+    height:100%;
+    width: 250px;
+    margin-right: -20px;
+
+}
+.small-img{
+    height:100px ;
+    width: 100px;
+}
+.heading-name{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.heading-name:hover {
+    color: #65b;
+
+}
+.date{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+select{
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+}
+.fake{
+    height: 80%;
+    width: 100%;
+    margin-top: 0px;
+
+}
+.topic-head{
+    font-family: glasio;
+    font-size: 50px;
+}
+
+.nav__link {
+    position: relative;
+    /* color: #fff; */
+  }
+  
+  .nav__link:hover {
+    position: relative;
+  }
+  
+  .nav__link:hover::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 0.18rem;
+    left: 0;
+    top: 2rem;
+    background-color: #29f;
+  }
+  .n{
+   
+        text-decoration: none;
+      
+  }
+
+
+  .effect{
+      border: 2px solid blue;
+      height: 300px;
+  }
