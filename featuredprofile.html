@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      #container {
+        display: flex;
+        /* border: 1px solid red; */
+      }
+      #first {
+        margin: 100px 0px 0px 70px;
+        box-shadow: rgba(17, 7, 7, 0.02) 0px 1px 3px 0px,
+          rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        border-radius: 2%;
+        height: 470px;
+        padding: 10px 10px 1px 40px;
+      }
+
+      #container a {
+        display: block;
+        text-decoration: none;
+        font-size: 160%;
+        color: black;
+        margin: 30px 0px;
+        font-weight: bold;
+      }
+      li {
+        list-style-type: none;
+        margin-left: -30px;
+      }
+      #firsta li:hover {
+        background-color: blue;
+      }
+
+      #container > div > div:nth-child(1) {
+        margin-left: -30px;
+      }
+      #second {
+        /* height: 170px;
+        width: 999px; */
+        border: 1px solid #f6faff;
+        margin: 100px 0px 0px 30px;
+        background-color: #f6faff;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 60px 1px 60px;
+      }
+      #second img {
+        height: 180px;
+        width: 170px;
+        margin-right: 10px;
+      }
+      #second h3 {
+        text-decoration: underline;
+        color: blue;
+      }
+      #container1 {
+        width: 70%;
+        padding-left: 50px;
+        padding-right: 1px;
+      }
+      #third {
+        /* width: 95%; */
+        /* border: 1px solid yellow; */
+        height: 90%;
+        margin-top: 20px;
+      }
+      #countryname {
+        display: flex;
+        padding: 10px;
+      }
+      #countryname > a {
+        padding-right: 50px;
+        color: blue;
+        font-weight: 100;
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+        
+      }
+      .box {
+        border: 0.5px solid grey;
+        display: flex;
+    height: 160px;
+    width: 160px;
+        border-radius: 10px;
+        margin-top: 30px;
+      }
+      .box h4
+      {
+        text-align: right;
+        margin-right: 10px;
+        
+      }
+    #btn1
+      {
+        margin-top: 40px;
+        width: 110px;
+        height: 50px;
+        background-color: blue;
+        border-radius: 5px;
+        color: white;
+        font-size: 17px;
+        cursor: pointer;
+      }
+      #ctn3
+      {
+        /* border: 1px solid green; */
+        display:  flex;
+        justify-content: space-around; 
+        padding: 30px; 
+      }
+      #ctn4
+      {
+        background-color: #e4f0ff;
+        padding: 20px;
+      }
+      #ctn4>img
+      {
+        height: 253px;
+        width: 450px;
+      }
+      #ctn3a
+      {
+        margin-left: 400px;
+
+      }
+      #ctn3a h3{
+        font-size: large;
+       
+      }
+      #ctn5
+      {
+        
+        height: 42px;
+        width:auto;
+        margin: auto;
+        margin-left: 430px;
+        background-color: #e4f0ff;
+        border: 1px solid #e4f0ff;
+        margin-top: 20px;
+      }
+      #ctn6
+      {
+        border: 1px solid blue;
+        margin: auto;
+        width: auto;
+        margin-left: 430px;
+      }
+      #ctn7
+      {
+        width:auto;
+        margin: auto;
+       
+        margin: 50px 0px 0px 400px;
+        padding: 20px;
+      }
+      #ctn8
+      {
+        /* border: 1px solid blue;  */
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        margin-left: -10px;
+        font-family: sans-serif;
+        
+      }
+      #ctn8 p{
+        font-size:120%;
+      }
+      #ctn8 h3
+      {
+        font-weight: bolder;
+      }
+      #ctn9
+      {
+        /* border: 1px solid blue;  */
+        width:82%;
+        margin: auto;
+        font-size:130%;
+        margin-left: 1px;
+        font-family: sans-serif;
+      }
+      #f1
+      {
+        color: #007aff;
+      }
+      #btn3{
+        padding: 6px 15px 4px 15px;
+        border-radius: 20px;
+        text-transform: uppercase;
+        background-color: #e5f1ff;
+        border: 1px solid #e5f1ff;
+      }
+      #bottom
+      {
+        /* border: 1px solid red; */
+        margin-top: 80px;
+        margin-left: 90px;
+      }
+      #btm1{
+        display: flex;
+        width: auto;
+      }
+      #btm1>div:nth-child(1)
+      {
+       width: 20%;
+        color: blue;
+        margin-top: 20px;
+        margin-left: 20px;
+      }
+      #btm1>div:nth-child(2)
+      {
+        width: 80%;
+        margin-left: -130px;
+      }
+      #btm1>div:nth-child(2)>p{
+        cursor: pointer;
+      }
+      #btm2{
+        display: flex;
+        width: auto;
+      }
+      #btm2>div:nth-child(1)
+      {
+       width: 20%;
+        color: blue;
+        margin-top: 20px;
+        margin-left: 20px;
+      }
+      #btm2>div:nth-child(2)
+      {
+        width: 80%;
+        margin-left: -130px;
+      }
+      #btm2>div:nth-child(2)>p{
+        cursor: pointer;
+      }
+
+      #btm3{
+        display: flex;
+        width: auto;
+      }
+      #btm3>div:nth-child(1)
+      {
+       width: 20%;
+        color: blue;
+        margin-top: 20px;
+        margin-left: 20px;
+      }
+      #btm3>div:nth-child(2)
+      {
+        width: 80%;
+        margin-left: -130px;
+      }
+      #btm3>div:nth-child(2)>p{
+        cursor: pointer;
+      }
+      #btm4{
+        display: flex;
+        width: auto;
+      }
+      #btm4>div:nth-child(1)
+      {
+       width: 20%;
+        color: blue;
+        margin-top: 20px;
+        margin-left: 20px;
+      }
+      #btm4>div:nth-child(2)
+      {
+        width: 80%;
+        margin-left: -130px;
+      }
+      #btm4>div:nth-child(2)>p{
+        cursor: pointer;
+      }
+      #btm5{
+        display: flex;
+        width: auto;
+      }
+      #btm5>div:nth-child(1)
+      {
+       width: 20%;
+        color: blue;
+        margin-top: 20px;
+        margin-left: 20px;
+      }
+      #btm5>div:nth-child(2)
+      {
+        width: 80%;
+        margin-left: -130px;
+      }
+      #btm5>div:nth-child(2)>p{
+        cursor: pointer;
+      }
+      #btm6{
+        display: flex;
+        width: auto;
+      }
+      #btm6>div:nth-child(1)
+      {
+       width: 20%;
+        color: blue;
+        margin-top: 20px;
+        margin-left: 20px;
+      }
+      #btm6>div:nth-child(2)
+      {
+        width: 80%;
+        margin-left: -130px;
+      }
+      #btm6>div:nth-child(2)>p{
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="first">
+        <div>
+          <h2>Buy Career services</h2>
+          <h3>Give your job hunt a boost</h3>
+        </div>
+        <div id="firsta">
+          <ul>
+            <li><a href="featuredprofile.html">Featured Profile</a></li>
+            <li><a href="resumewriting.html">Resume Writing</a></li>
+            <li><a href="carrerbooster.html">Career Booster</a></li>
+            <li><a href="profilehighlighter.html">Profile Highlighter</a></li>
+            <li><a href="linkedinmakeover.html">Linkedin Makeover</a></li>
+            <li><a href="mockinterviewguide.html">Mock Interview Guide</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="container1">
+        <div id="second">
+          <div>
+            <h1>Featured Profile</h1>
+            <h2>Better your chances of getting shortlisted</h2>
+            <h3>Benefit</h3>
+          </div>
+          <div>
+            <img
+              src="https://media.monsterindia.com/trex/public/default/images/career-services/xpress-resume.png"
+            />
+          </div>
+        </div>
+        <div id="third">
+          <div id="custhead">
+            <h2>Customize Feature Profile</h2>
+          </div>
+          <div id="jobbody">
+            <div id="countryname">
+              <a href="#">India</a>
+              <a href="#">Golf</a>
+              <a href="#">India+Golf</a>
+            </div>
+            <div class="cards">
+              <div class="box">
+                <div>
+                  <input type="radio" />
+                </div>
+                <div>
+                  <h4>Entry Level 0</h4>
+                  <p>Experience</p>
+                  <p>0 - 2 year</p>
+                  <h4>Rs 999</h4>
+                </div>
+              </div>
+              <div class="box">
+                <div>
+                  <input type="radio" />
+                </div>
+                <div>
+                  <h4>Entry Level 1</h4>
+                  <p>Experience</p>
+                  <p>2 - 4 year</p>
+                  <h4>Rs 2499</h4>
+                </div>
+              </div>
+              <div class="box">
+                <div>
+                  <input type="radio" />
+                </div>
+                <div>
+                  <h4>Mid Level </h4>
+                  <p>Experience</p>
+                  <p>4 - 8 year</p>
+                  <h4>Rs 2799</h4>
+                </div>
+              </div>
+              <div class="box">
+                <div>
+                  <input type="radio" />
+                </div>
+                <div>
+                  <h4>Senior Level </h4>
+                  <p>Experience</p>
+                  <p>8 - 15 year</p>
+                  <h4>Rs 2899</h4>
+                </div>
+              </div>
+              <div class="box">
+                <div>
+                  <input type="radio" />
+                </div>
+                <div>
+                  <h4>Executive Level </h4>
+                  <p>Experience</p>
+                  <p>over 15 year</p>
+                  <h4>Rs 2999</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#"><button id="btn1">Buy Now</button> </a> 
+        </div>
+        
+      </div>
+      
+      </div>
+      <div id="ctn3">
+        <div id="ctn3a">
+         <h2> Benefits</h2>
+         <h3><i class="fa-solid fa-circle-check" id="f1"></i>Your profile is upfront when recruiters search candidate like you.</h3>
+         <h3><i class="fa-solid fa-circle-check" id="f1"></i>You are showcased as an active job seeker who is keenly looking</h3>
+         <h3><i class="fa-solid fa-circle-check" id="f1"></i>Increase your chances of getting shortlisted in an interview</h3>
+        </div>
+        <div>
+          <div id="ctn4">
+            <img src="https://media.monsterindia.com/trex/public/default/images/career-services/xpress-resume-popup.png">
+          </div>
+        </div>
+    </div>
+    <div id="ctn5">
+    </div>
+    <div id="ctn6">
+    </div>
+    <div id="ctn7">
+      <h2>
+        How it works
+      </h2>
+      <h3>
+        You can achieve this in just 3 simple steps
+      </h3>
+      <div id="ctn8">
+        <div>
+          <button id="btn3">Step 1</button>
+          <h3>Buy the service</h3>
+          <p>You can choose from national, gulf or for both the regions</p>
+        </div>
+        <div>
+          <button id="btn3">Step 2</button>
+          <h3>Upload latest resume</h3>
+          <p>Do this within 5 working days and we will promote your profile</p>
+        </div>
+        <div>
+          <button id="btn3">Step 3</button>
+          <h3>Enjoy for next 6 months</h3>
+          <p>Stand out from the crowd as an active job seeker and get ahead of your competition</p>
+          
+        </div>
+      </div>
+      <div id="ctn9">
+        <h2>Disclaimer</h2>
+        <p>Monster only displays your profile at the top of the search listing page basis the resume matches the search criteria used by the recruiter(s).</p>
+      </div>  
+    </div>
+    <div id="bottom"> 
+
+      <div id="btm1">
+<div>Jobs by Locations</div>
+<div><p>: Jobs in Bangalore |   Jobs in Delhi  |   Jobs in Mumbai |   Jobs in Chennai |   Jobs in Hyderabad |     Jobs in Kolkata |     Jobs in Pune |    Jobs in Chandigar |   Jobs in Lucknow |   Jobs in Coimbatore |    Jobs in Odisha |    Jobs in Jaipur |    Jobs in Ahmedabad |     Jobs in Indore |    Jobs in Nagpur |    Jobs in Goa |   Jobs in Noida    |    Jobs in Bhubaneswar   |   Jobs in Gurgaon    |    Jobs in Guwahati    |  Jobs in Dehradun   |   Jobs in Mysore  |   Jobs in Bhopal     |   Jobs in Vijayawada</p></div>
+
+      </div>
+      <div id="btm2">
+        <div>Jobs by Skill -IT</div>
+        <div><P> :         Biotechnology Jobs    |    Digital Marketing Jobs   |  Graphic Design Jobs    |    Networking Jobs    |     Oracle Jobs     |    SEO Jobs     |    Software Testing Jobs    |    Sql Jobs   |    Web Design Jobs</P></div>
+      </div>
+      <div id="btm3"> 
+        <div>Jobs by Skill -NON IT</div>
+        <div><p>    :ACCOunting Jobs     |       BPO Jobs    |   Call Center Jobs    |    CIVil Engineering Jobs   |    Content Witing Job   |   Ds   Electrical tngineering Jobs    |     Event Management Jobs     |         Hotel Management Jobs       |     HR Job  |   
+        |  Sales Jobs</p></div>
+      </div>
+      <div id="btm4">
+        <div>Jobs by Role</div>
+        <div><p>:Air Hostess Jobs      |     Accountaint Jobs    |    Assistant Professor Jobs      |              Business Analyst Jobs     |         Computer Operator jobs      |          Data Analyst Jobs          |                Data Entry Operator Jobs     |              Fashion Designer Jobs      |
+          Graphics Designer jobs    |       Software Engineer Job</p></div>
+      </div>
+      <div id="btm5">
+        <div> International  Jobs</div>
+    <div><p>Jobs in Gulf Jobs     |     job in Singapore      |    Jobs in Malaysia       |     Jobs in Philippines     |                Jobs in Hong Kong      |      Jobs in Vietnam    |      Jobs in indionesia     |      Jobs in Thailand     |              Jobs in Dubai    |       Jobs in UAE</p></div>
+      </div>
+      <div id="btm6">
+        <div> Other  Jobs</div>
+        <div><p>Walk-in Jobs      |      Part lime Jobs     |      Contract Jobs    |      Jobs for Women       |        Fresher Jobs       |    reelancer Jobs       |        Work from Home Jobs      |      12th PasS JObs       |                 10th Pass Jobs                 Diploma Jobs</p></div>
+      </div>
+</div> 
+  </body>
+</html>
+
+
