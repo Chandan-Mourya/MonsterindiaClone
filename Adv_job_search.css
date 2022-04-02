@@ -1,0 +1,279 @@
+*{
+    color: darkgray;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    color: black;
+    margin-left: 45px;
+}
+.outer-cont{
+    
+    display: grid;   
+    grid-template-columns: 5fr 2fr;
+    gap: 20px;
+   
+    /* margin: auto; */
+    /* margin-left: 50px; */
+    padding: 40px;
+}
+
+
+
+.flx{
+    display: flex;
+}
+select{
+    border: none;
+    outline: none;
+}
+
+.ip-cont{
+    /* border: 1px solid black; */
+    /* width: 70%;--------------------------------------------------------------------- */
+    padding: 40px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+   
+}
+
+#exp-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.border{
+    border: 1px solid gray;
+    padding: 15px;
+}
+
+.m-left{
+    margin-left: 10px;
+}
+
+.gap{
+    margin-left: 20px;
+    
+}
+
+.checkbox{
+
+    margin-left: 20px;
+   margin-top: 10px;
+   color: black;
+}
+
+#keyword,#location{
+    border: none;
+    outline: none;
+    
+}
+
+#max-salary
+{
+    /* width: 100%; */
+    padding: 0px 0px;
+}
+
+
+#industry,#function,#role,#exp,#min-salary,#max-salary{
+    width: 100%;    
+}
+
+
+
+#sub{
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    background-color: #6c54da;
+    color: white;
+    border: none;
+}
+
+
+
+#search-tips{
+    margin-top: 10px;
+    padding: 15px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    /* height: 300px; */
+}
+#img{
+    width: 35px;
+    /* width: 100%; */
+    /* margin-top: 10px; */
+    margin-right: 20px; 
+}
+#img1{
+    width: 100%;
+    height: 100%;  
+}
+.search{
+    margin-top: 30px;
+    
+}
+h3{
+    color: #6c54da;
+}
+h5{
+    color: skyblue;
+}
+
+/* ----------------------------------------------------------- Bottom Section---------------------------------------------------------------  */
+
+  #bottom{
+    /* border: 1px solid red; */
+    margin-top: 80px;
+    margin-left: 90px;
+  }
+  #btm1{
+    display: flex;
+    width: auto;
+    
+  }
+  #btm1>div:nth-child(1)
+  {
+   width: 20%;
+    color: blue;
+    /* margin-top: 20px; */
+    margin-left: 20px;
+  }
+  #btm1>div:nth-child(2)
+  {    
+    width: 80%;
+    margin-left: -130px;    
+  }
+  #btm1>div:nth-child(2)>p{
+    cursor: pointer;
+  }
+  #btm2{
+    display: flex;
+    width: auto;
+  }
+  #btm2>div:nth-child(1)
+  {
+   width: 20%;
+    color: blue;
+    /* margin-top: 20px; */
+    margin-left: 20px;
+  }
+  #btm2>div:nth-child(2)
+  {
+    width: 80%;
+    margin-left: -130px;
+  }
+  #btm2>div:nth-child(2)>p{
+    cursor: pointer;
+  }
+
+  #btm3{
+    display: flex;
+    width: auto;
+  }
+  #btm3>div:nth-child(1)
+  {
+   width: 20%;
+    color: blue;
+    /* margin-top: 20px; */
+    margin-left: 20px;
+  }
+  #btm3>div:nth-child(2)
+  {
+    width: 80%;
+    margin-left: -130px;
+  }
+  #btm3>div:nth-child(2)>p{
+    cursor: pointer;
+  }
+  #btm4{
+    display: flex;
+    width: auto;
+  }
+  #btm4>div:nth-child(1)
+  {
+   width: 20%;
+    color: blue;
+    /* margin-top: 20px; */
+    margin-left: 20px;
+  }
+  #btm4>div:nth-child(2)
+  {
+    width: 80%;
+    margin-left: -130px;
+  }
+  #btm4>div:nth-child(2)>p{
+    cursor: pointer;
+  }
+  #btm5{
+    display: flex;
+    width: auto;
+  }
+  #btm5>div:nth-child(1)
+  {
+   width: 20%;
+    color: blue;
+    /* margin-top: 20px; */
+    margin-left: 20px;
+  }
+  #btm5>div:nth-child(2)
+  {
+    width: 80%;
+    margin-left: -130px;
+  }
+  #btm5>div:nth-child(2)>p{
+    cursor: pointer;
+  }
+  #btm6{
+    display: flex;
+    width: auto;
+  }
+  #btm6>div:nth-child(1)
+  {
+   width: 20%;
+    color: blue;
+    /* margin-top: 20px; */
+    margin-left: 20px;
+  }
+  #btm6>div:nth-child(2)
+  {
+    width: 80%;
+    margin-left: -130px;
+  }
+  #btm6>div:nth-child(2)>p{
+    cursor: pointer;
+  } 
+
+ /* small screens */
+@media only screen and (min-width: 420px) and (max-width: 780px) {
+   
+    
+    
+    .outer-cont{
+    
+        display: grid;   
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-content: center;
+    }  
+        
+
+    #exp-box{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    } 
+
+    #img1{
+        width: 50%;
+        height: 50%;  
+        display: block;
+        margin: auto;
+    }
+    
+    #search-tips{
+        display: none;
+    }
+    
+   
+} 
