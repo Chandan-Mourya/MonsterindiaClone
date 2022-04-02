@@ -244,6 +244,67 @@ h5{
     cursor: pointer;
   } 
 
+/* ------------------------------------------------------------Footer section ------------------------------------------------------------- */
+
+#bigbox {
+  width: 100%;
+  height: 350px;
+  
+  background-color: #5d4da8;
+}
+
+#bigbox_1 {
+  width: 90%;
+  height: 350px;
+ 
+  margin: auto;
+  margin-top: 20px;
+}
+
+#row {
+  display: flex;
+  justify-content: space-around;
+ 
+}
+
+.fs {
+  font-size: 20px;
+  color: white;
+}
+#shoking li a{
+  text-decoration: none;
+  margin-top: 30px;
+  font-size: large;
+  color: white;
+  
+}
+#shoking li a:hover{
+ border-bottom: 1px solid white;
+ 
+}
+#stay_2{
+  width: 130px;
+  height: 40px;
+  border:1px solid green;
+  margin-top: 40px;
+
+}
+#stay_3{
+  width: 130px;
+  height: 40px;
+  border:1px solid green;
+  margin-top: 20px;
+
+}
+#stay_img{
+  width: 130px;
+  height: 40px;
+}
+#img_stay{
+  width: 130px;
+  height: 40px;
+}  
+
  /* small screens */
 @media only screen and (min-width: 420px) and (max-width: 780px) {
    
