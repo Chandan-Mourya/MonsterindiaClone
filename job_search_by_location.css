@@ -192,6 +192,128 @@ button{
     color: black;
 }
 
+/* -------------------------------------------------- Bottom Section ------------------------------------------------------------------------- */
+
+#bottom{
+    /* border: 1px solid red; */
+    margin-top: 80px;
+    margin-left: 90px;
+  }
+  #btm1{
+    display: flex;
+    width: auto;
+  }
+  #btm1>div:nth-child(1)
+  {
+   width: 20%;
+    color: blue;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  #btm1>div:nth-child(2)
+  {
+    width: 80%;
+    margin-left: -130px;
+  }
+  #btm1>div:nth-child(2)>p{
+    cursor: pointer;
+  }
+  #btm2{
+    display: flex;
+    width: auto;
+  }
+  #btm2>div:nth-child(1)
+  {
+   width: 20%;
+    color: blue;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  #btm2>div:nth-child(2)
+  {
+    width: 80%;
+    margin-left: -130px;
+  }
+  #btm2>div:nth-child(2)>p{
+    cursor: pointer;
+  }
+
+  #btm3{
+    display: flex;
+    width: auto;
+  }
+  #btm3>div:nth-child(1)
+  {
+   width: 20%;
+    color: blue;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  #btm3>div:nth-child(2)
+  {
+    width: 80%;
+    margin-left: -130px;
+  }
+  #btm3>div:nth-child(2)>p{
+    cursor: pointer;
+  }
+  #btm4{
+    display: flex;
+    width: auto;
+  }
+  #btm4>div:nth-child(1)
+  {
+   width: 20%;
+    color: blue;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  #btm4>div:nth-child(2)
+  {
+    width: 80%;
+    margin-left: -130px;
+  }
+  #btm4>div:nth-child(2)>p{
+    cursor: pointer;
+  }
+  #btm5{
+    display: flex;
+    width: auto;
+  }
+  #btm5>div:nth-child(1)
+  {
+   width: 20%;
+    color: blue;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  #btm5>div:nth-child(2)
+  {
+    width: 80%;
+    margin-left: -130px;
+  }
+  #btm5>div:nth-child(2)>p{
+    cursor: pointer;
+  }
+  #btm6{
+    display: flex;
+    width: auto;
+  }
+  #btm6>div:nth-child(1)
+  {
+   width: 20%;
+    color: blue;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  #btm6>div:nth-child(2)
+  {
+    width: 80%;
+    margin-left: -130px;
+  }
+  #btm6>div:nth-child(2)>p{
+    cursor: pointer;
+  }
 
 
 @media only screen and (min-width: 98px) and (max-width: 780px){
