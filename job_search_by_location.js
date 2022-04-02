@@ -285,6 +285,10 @@ JobData.map(function(elem,index){
     var btn = document.createElement("button");
     btn.setAttribute("id","btn")
     btn.innerText = "APPLY"
+    btn.addEventListener("click",function(){
+
+        window.location.href = "applied_jobs.html"
+    })
     span6.setAttribute("class","icon")
     span6.append(btn)
 

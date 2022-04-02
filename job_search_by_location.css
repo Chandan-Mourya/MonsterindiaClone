@@ -38,6 +38,7 @@
 #nav{
     display: grid;
     grid-template-columns: 5fr 4fr 2fr 1fr;
+    grid-template-rows: 60px;
     gap: 10px;
     padding: 15px 50px;  
 }
