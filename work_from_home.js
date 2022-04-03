@@ -11,7 +11,7 @@ var JobData = [
     {
         "Role": "Manager, Support Engineering , Partner Trust",
         "CompanyName": "Amazon",
-        "Location": "Bengaluru / Bangalore , India",
+        "Location": "Thane  / Maharashtra , India",
         "Experience": " 3-6 years",
         "Salary": "Not Specified",
         "Description": "Amazon is investing heavily in building a world class advertising business and we are responsible for defining and delivering a collection of self-service performance advertising products that drive discovery and sales...."
@@ -19,7 +19,7 @@ var JobData = [
     {
         "Role": "Software Development Engineer II",
         "CompanyName": "Amazon",
-        "Location": "Bengaluru / Bangalore , India",
+        "Location": "Anna malai / Chennai , India",
         "Experience": " 2-5 years",
         "Salary": "Not Specified",
         "Description": "Amazon Payment Experience Platform team at Amazon India Development Center, Bangalore is looking for a Developer to design and build the next generation of Payments platform and product from the ground up..."
@@ -27,7 +27,7 @@ var JobData = [
     {
         "Role": "Business Intelligence Engineer, IN Advertising",
         "CompanyName": "Amazon",
-        "Location": "Bengaluru / Bangalore",
+        "Location": "Surat  / Gujraat",
         "Experience": " 4-7 years",
         "Salary": " Not Specified",
         "Description": "Amazon Advertising exists at the intersection of marketing and e-commerce and offers advertisers a rich array of innovative advertising solutions across Amazon owned properties as well as third party properties Amazon operates....."
@@ -35,7 +35,7 @@ var JobData = [
     {
         "Role": "Risk Control Analyst",
         "CompanyName": "Amazon",
-        "Location": "Bengaluru / Bangalore , India",
+        "Location": "Lucknow / UP , India",
         "Experience": " 1-4 years",
         "Salary": "Not Specified",
         "Description": "Suspicious Activity Monitoring (SAM) enables Amazon businesses to mitigate the regulatory and legal risk of money laundering and terrorist financing...."
@@ -43,7 +43,7 @@ var JobData = [
     {
         "Role": "Software Development Engineer, Alexa Smart Properties",
         "CompanyName": "Amazon",
-        "Location": "Bengaluru / Bangalore , India",
+        "Location": "Wapi / Gujraat , India",
         "Experience": "Not Specified",
         "Salary": " Not Specified",
         "Description": "Are you looking for an opportunity to build a highly available, large scale, enterprise-wide software solution Does it excite you to find patterns and build generic, composable....."
@@ -51,7 +51,7 @@ var JobData = [
     {
         "Role": "Network Specialist",
         "CompanyName": "Standard Chartered",
-        "Location": " Bengaluru / Bangalore ,India",
+        "Location": " Malad / Navi Mumbai ,India",
         "Experience": "10-15 Years",
         "Salary": " Not Specified",
         "Description": "We are a leading international bank focused on helping people and companies prosper across Asia, Africa and the Middle East......"
