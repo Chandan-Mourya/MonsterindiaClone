@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup page</title>
+    <style>
+        body {
+            /* display: block; */
+            background-color: whitesmoke;
+            text-align: center; 
+        }
+        h1{
+            margin-top: 50px;
+        }
+    
+
+        .signup{
+            margin: auto;
+            width:300px;
+            display: grid;
+            padding:20px;
+            grid-template-columns: repeat(1,1fr);
+            /* border: 1px solid red; */
+            margin-top: 20px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+             rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        
+        }
+        input{
+            margin-bottom: 20px;
+            height: 30px;
+            width: 95%;
+        }
+       
+        #btn{
+            background-color:#29f;
+            border-radius: 5px;
+            height: 40px;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div id="navbar">
+      <div><a target="_blank" href="men.html">Men</a></div>
+      <div><a href="women.html">Women</a></div>
+      <div><a href="signup.html">Signup</a></div>
+      <div><a href="login.html">Login</a></div>
+    </div> -->
+    <h1>Signup page</h1>
+    <div class="signup">
+        <form>
+            <input id="email" type="text" placeholder="Enter email" />
+            <input id="pass" type="password" placeholder="Enter password" />
+            <input id="user" type="text" placeholder="Enter username" />
+            <input id="btn" type="submit" />
+          </form>
+    </div>
+   
+    
+  </body>
+</html>
+
+<script>
+  document.querySelector("form").addEventListener("submit", signUpFun);
+
+  var userData = JSON.parse(localStorage.getItem("userCreds"))||[]
+  function signUpFun() {
+    event.preventDefault();
+
+    var userObj = {
+      email: document.querySelector("#email").value,
+      password: document.querySelector("#pass").value,
+      userName: document.querySelector("#user").value,
+    };
+    //console.log(userObj);
+    userData.push(userObj);
+    //console.log(userData)
+    localStorage.setItem("userCreds",JSON.stringify(userData))
+
+    alert("SignUP success");
+        window.location.href = "login.html";
+
+  }
+</script>
