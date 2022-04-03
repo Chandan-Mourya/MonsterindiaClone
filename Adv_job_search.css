@@ -244,6 +244,8 @@ h5{
     cursor: pointer;
   } 
 
+  
+
  /* small screens */
 @media only screen and (min-width: 420px) and (max-width: 780px) {
    
