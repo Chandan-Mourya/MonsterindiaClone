@@ -243,3 +243,118 @@ button{
         height: 25px;
     }
 }
+
+
+/* #############################-----Footer section -----#####################################################*/
+
+#bigbox {
+    width: 100%;
+    height: 350px;
+    
+    background-color: #5d4da8;
+  }
+  
+  #bigbox_1 {
+    width: 90%;
+    height: 350px;
+   
+    margin: auto;
+    margin-top: 20px;
+  }
+  
+  #row {
+    display: flex;
+    justify-content: space-around;
+   
+  }
+  
+  .fs {
+    font-size: 20px;
+    color: white;
+  }
+  #shoking li a{
+    text-decoration: none;
+    margin-top: 30px;
+    font-size: large;
+    color: white;
+    
+  }
+  #shoking li a:hover{
+   border-bottom: 1px solid white;
+   
+  }
+  #stay_2{
+    width: 130px;
+    height: 40px;
+    border:1px solid green;
+    margin-top: 40px;
+  
+  }
+  #stay_3{
+    width: 130px;
+    height: 40px;
+    border:1px solid green;
+    margin-top: 20px;
+  
+  }
+  #stay_img{
+    width: 130px;
+    height: 40px;
+  }
+  #img_stay{
+    width: 130px;
+    height: 40px;
+  }
+  
+  @media only screen and (min-width: 98px) and (max-width: 780px){
+  
+      *{
+          justify-content: center;
+      }
+  
+      #nav{
+          display: grid;
+          grid-template-columns: 5fr 4fr 2fr 1fr;
+          grid-template-rows: auto;
+          gap: 10px;
+          padding: 15px 50px;  
+          width: 100%;
+      }  
+  
+      #outer-cont{
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: auto;
+          gap: 20px;
+          padding: 50px;
+      }
+  
+      #inner1,#nav{
+  
+          display: none;
+      }
+      
+      #search{
+          font-size: xx-small;
+      }
+      
+      button{
+          padding: 16px 45px;
+          font-size: x-small;   
+      }
+      
+      #no_of_content{
+  
+          height: 30px;
+          padding: 5px 10px;
+      }
+  
+      #fixed-div{
+          padding: 10px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
+          text-align:justify;
+          height: 25px;
+      }
+  }
+  
+  
