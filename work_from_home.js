@@ -10,7 +10,7 @@ var JobData = [
     },
     {
         "Role": "Manager, Support Engineering , Partner Trust",
-        "CompanyName": "Amazon",
+        "CompanyName": "Tcs",
         "Location": "Surat / Gujraat , India",
         "Experience": " 3-6 years",
         "Salary": "Not Specified",
@@ -18,23 +18,23 @@ var JobData = [
     },
     {
         "Role": "Software Development Engineer II",
-        "CompanyName": "Amazon",
+        "CompanyName": "Google",
         "Location": "Parel / Mumbai , India",
         "Experience": " 2-5 years",
         "Salary": "Not Specified",
-        "Description": "Amazon Payment Experience Platform team at Amazon India Development Center, Bangalore is looking for a Developer to design and build the next generation of Payments platform and product from the ground up..."
+        "Description": "Google Payment Experience Platform team at Amazon India Development Center, Bangalore is looking for a Developer to design and build the next generation of Payments platform and product from the ground up..."
     },
     {
         "Role": "Business Intelligence Engineer, IN Advertising",
-        "CompanyName": "Amazon",
+        "CompanyName": "Mesho",
         "Location": "lucknow / UP",
         "Experience": " 4-7 years",
         "Salary": " Not Specified",
-        "Description": "Amazon Advertising exists at the intersection of marketing and e-commerce and offers advertisers a rich array of innovative advertising solutions across Amazon owned properties as well as third party properties Amazon operates....."
+        "Description": "Mesho Advertising exists at the intersection of marketing and e-commerce and offers advertisers a rich array of innovative advertising solutions across Amazon owned properties as well as third party properties Amazon operates....."
     },
     {
         "Role": "Risk Control Analyst",
-        "CompanyName": "Amazon",
+        "CompanyName": "paytm",
         "Location": "Anna Malai / Chennai , India",
         "Experience": " 1-4 years",
         "Salary": "Not Specified",
@@ -58,7 +58,7 @@ var JobData = [
     },
     {
         "Role": "Relationship Manager,Priority Banking",
-        "CompanyName": "Standard Chartered",
+        "CompanyName": "ICICI",
         "Location": " Bengaluru / Bangalore ,India",
         "Experience": "Not Specified",
         "Salary": " Not Specified",
@@ -66,7 +66,7 @@ var JobData = [
     },
     {
         "Role": "Vice President, Client Coverage Performance Reporting",
-        "CompanyName": "Standard Chartered",
+        "CompanyName": "HDFC Chartered",
         "Location": "Bengaluru / Bangalore ,India",
         "Experience": "Not Specified",
         "Salary": "Not Specified",
