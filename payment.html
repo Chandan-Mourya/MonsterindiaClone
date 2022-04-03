@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="shortcut icon" sizes="152x152" href="https://i1.lmsin.net/website_images/in/favicons/lifestyle/apple-touch-icon-152x152.png">
+    <style>
+        body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFFFFF;
+    }
+
+   hr {
+    height: 1px;
+    border: 0;
+    border-top: 0.1em solid rgb(236, 237, 235);
+    width: 100%;
+    border-radius: 3%;
+   }
+   h1{
+       font-weight: 400;
+   }
+   h2{
+       font-weight: 300;
+   }
+   h3{
+       font-weight: 300;
+       margin-top: 50px;
+   }
+
+    #checkoutContainer {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 1%;
+    padding: 3%;
+    margin: auto;
+    width: 80%;
+    margin-left: 500px;
+   }
+
+   #checkoutContainer>div:nth-child(2) {
+    margin-top: 30%;
+   }
+
+  #homeClickCollect {
+    width: 80%;
+    display: flex;
+    gap: 4%;
+    text-align: center;
+   }
+
+   #homeClickCollect>div:nth-child(1), #homeClickCollect>div:nth-child(2) {
+    border: 2px solid gray;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 6%;
+    padding-right: 6%;
+    cursor: pointer;
+    width: 50%;
+    justify-content: start;
+    margin-bottom: 50px;
+   }
+
+   #checkoutAddressType {
+    display: flex;
+    padding: 2%;
+    text-align: center;
+   }
+
+   .textBoxInputWidth {
+    border: 2px solid rgb(230, 227, 227);
+    padding: 2%;
+    width: 43%;
+   }
+
+   #checkoutPayNowBtnPanel {
+    display: flex;
+    gap: 1%;
+   }
+
+   #payNow {
+    margin: auto;
+    border: none;
+    /* border: 1px solid black; */
+    width: 30%;
+    height: auto;
+    cursor: pointer;
+    padding: 2%;
+    border-radius: 2%;
+    background-color: blue;
+    color: white;
+    margin-top: 110px;
+    margin-left: -400px;
+   }
+
+   #checkoutTermsAndConditions img {
+    width: 25%;
+    height: auto;
+   }
+
+   footer {
+    text-align: center;
+   }
+
+
+   #checkoutProductDiv h4, #checkoutProductDiv h5 {
+    font-weight: 600;
+    font-size: 70%;
+   }
+
+   #checkoutProductsDiv img {
+    width: 7vw;
+    height: 100%;
+   }
+
+   #checkoutProductsDiv>div {
+    display: flex;
+    padding: 1%;
+   }
+
+   #checkoutProductsDiv>div>div {
+    margin-right: 2%;
+   }
+   p{
+    font-size: 13px;
+    color: gray;
+   }
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <div id="checkoutContainer">
+        <form id="checkoutForm">
+            
+            <div id="homeClickCollect">
+            
+            </div>
+            
+            
+
+            <h1>Select a payment method</h1>
+            <div>
+                <input id="" class="" name="card" type="radio" checked><span>Credit Card</span>
+                <input id="" class="" name="card" type="radio"><span>Debit Card</span>
+            </div>
+            <h3>Card Number</h3>
+            <input id="cardNumber" class="textBoxInputWidth" type="text" name="card" placeholder="Enter your 16 digit card number" required>
+
+            <h3>Name on Card</h3>
+            <input id="nameOnCard" class="textBoxInputWidth" type="text" name="name" placeholder="Name on card" required>
+
+            <h3>Expiry Date</h3>
+            <input id="expiryDate" type="month" name="month" placeholder="dd-mm-yyyy" required>
+            <p></p>
+
+            <div>
+                <input id="" type="checkbox"><span>Save this card for a faster checkout experience</span>
+            </div>
+    
+
+            <div id="checkoutPayNowBtnPanel">
+                <h6>By clicking on Proceed to Payment, you agree to our Terms and Conditions</h6>
+                <button id="payNow" type="button">PAYNOW</button>
+            </div>
+       
+
+
+        </form>
+   
+    </div>
+
+
+
+</body>
+
+</html>
+
+
+
+<script>
+    let basket = JSON.parse(localStorage.getItem('basket'));
+
+let checkoutProductDiv = document.getElementById('checkoutProductDiv');
+let checkoutProductsDiv = document.getElementById('checkoutProductsDiv');
+let checkoutSubtotalDiv = document.getElementById('checkoutSubtotalDiv');
+
+
+basket.forEach(function (element) {
+    let div = document.createElement('div');
+    let imgDiv = document.createElement('div');
+    let detailsDiv = document.createElement('div');
+    let img = document.createElement('img');
+    img.src = element.img[0];
+
+    let brand = document.createElement('h4');
+    brand.innerText = element.brand;
+
+    let details = document.createElement('h4');
+    details.innerText = element.category;
+
+    let price = document.createElement('h4');
+    price.innerText = "₹ " + element.price;
+    let hr = document.createElement('hr');
+    imgDiv.append(img);
+    detailsDiv.append(brand, details, price);
+    div.append(imgDiv, detailsDiv);
+    checkoutProductsDiv.append(div, hr);
+});
+
+let totalAmount = 0;
+basket.forEach(function (element) {
+    totalAmount += Number(element.price);
+});
+let totalAmounth3 = document.createElement('h3');
+totalAmounth3.innerText = "Sub Total" + " " + "₹" + " " + totalAmount;
+checkoutSubtotalDiv.append(totalAmounth3);
+
+
+let checkoutTotalDiv = document.getElementById('checkoutTotalDiv');
+let checkoutTotal = document.createElement('h3');
+checkoutTotal.innerText = "Total" + " " + "₹" + totalAmount;
+checkoutTotalDiv.append(checkoutTotal);
+
+
+let payNowBtn = document.getElementById('payNow');
+payNowBtn.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    let isFormValid = true;
+
+    let form = document.getElementById('checkoutForm');
+
+    if (form.fullName.value[0] == " " || form.fullName.value.length < 4) {
+        isFormValid = false;
+        alert("Enter valid name.");
+    } else if (form.fullName.value[0] == " " || isNaN(form.mobileNumber.value)) {
+        isFormValid = false;
+        alert("Mobile number cant be character or symbol.");
+    } else if (form.mobileNumber.value[0] == " " || form.mobileNumber.value.length != 10) {
+        isFormValid = false;
+        alert("Enter 10 digit mobile number.");
+    } else if (form.pincode.value[0] == " " || isNaN(form.pincode.value)) {
+        isFormValid = false;
+        alert("Pin Code cant be character or symbol.");
+    } else if (form.pincode.value[0] == " " || form.pincode.value.length != 6) {
+        isFormValid = false;
+        alert("Enter 6 digit pin code.");
+    } else if (form.city.value[0] == " " || form.city.value.length < 3) {
+        isFormValid = false;
+        alert("Enter valid city.");
+    } else if (form.state.value[0] == " " || form.state.value.length < 4) {
+        isFormValid = false;
+        alert("Enter valid state.");
+    } else if (form.buildingName.value[0] == " " || form.buildingName.value.length < 2) {
+        isFormValid = false;
+        alert("Enter valid building name.");
+    } else if (form.street.value[0] == " " || form.street.value.length < 4) {
+        isFormValid = false;
+        console.log(form.street.value.length);
+        alert("Enter valid street.");
+    } else if (form.cardNumber.value[0] == " " || form.cardNumber.value.length != 16) {
+        isFormValid = false;
+        alert("Enter 16 digit card number.");
+    } else if (form.nameOnCard.value[0] == " " || form.nameOnCard.value.length < 4) {
+        isFormValid = false;
+        alert("Enter valid name.");
+    } else {
+
+        let year = Number(form.expiryDate.value.slice(0, 4));
+        let month = Number(form.expiryDate.value.slice(5, 7));
+
+        if (year < new Date().getFullYear() || month < new Date().getMonth()) {
+            isFormValid = false;
+            alert("Expiry date is not valid.");
+        }
+    }
+
+    if (isFormValid === true) {
+        localStorage.removeItem("basket");
+        window.location.href = "thank.html";
+    }
+});
+
+
+localStorage.setItem('basket', JSON.stringify(basket));
+
+// home delivery and click&collect button onclick color change 
+let homeDeliveryBtn = document.getElementById('homeBtn');
+let clickAndCollectBtn = document.getElementById('clickBtn');
+
+homeDeliveryBtn.addEventListener('click', function () {
+    homeDeliveryBtn.setAttribute('style', 'background-color: #FAA81E;');
+    clickAndCollectBtn.setAttribute('style', 'backgournd-color: white;');
+});
+
+clickAndCollectBtn.addEventListener('click', function () {
+    homeDeliveryBtn.setAttribute('style', 'backgournd-color: white;');
+    clickAndCollectBtn.setAttribute('style', 'background-color: #FAA81E;');
+});
+
+
+
+
+</script>
