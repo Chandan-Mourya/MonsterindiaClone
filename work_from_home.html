@@ -378,3 +378,18 @@
 </body>
 </html>
 <script src="work_from_home.js"></script>
+<script>
+    document.querySelector("#exp").addEventListener("change", SortByPriceFun);
+   function SortByPriceFun(){
+     console.log("hiiiii Price")
+     var sel=document.querySelector("#exp").value;
+      console.log(sel)
+      if(sel=="job"){
+          window.location.href="Adv_job_search.html"
+      }
+      else if(sel == "bag"){
+         window.location.href="job_search_by_location.html"
+      }
+ 
+   }
+ </script>

@@ -222,6 +222,7 @@ JobData.map(function(elem,index){
     var p = document.createElement("p");
     p.setAttribute("class","blue")
     p.innerText = elem.CompanyName
+    p.style.marginTop = "20px"
     div2.append(p)
 
     var div3 = document.createElement("div");
